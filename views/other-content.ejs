@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hiển thị thông tin khi chọn tùy chọn</title>
+    <style>
+      /* #info {
+            display: none;
+        } */
+    </style>
+  </head>
+  <body>
+    <div style="width: 70%">
+      <h3>OTHER CONTENT</h3>
+      <div>
+        <h5>Chọn một tùy chọn và hiển thị thông tin</h5>
+
+        <form
+          action="/other-content/upload"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <input type="file" name="uploadedFile" /><br />
+            <label>Lãi suất 1</label
+            ><input
+              type="text"
+              value="15/11/2023"
+              name="interest1"
+              placeholder="Nhập ngày nộp lãi suất..."
+            />
+            <input
+              type="text"
+              value="BUT TOAN TRA LAI"
+              name="interest1"
+              placeholder="Nhập nội dung lãi suất..."
+            />
+            <input
+              type="text"
+              value="15500"
+              name="interest1"
+              placeholder="Nhập số tiền lãi suất..."
+            /><br />
+            <label>Phi TK 1</label
+            >
+            <input
+            type="text"
+            value="19/11/2023"
+            name="feeAccount1"
+            placeholder="Nhập ngày trả phí TK..."
+          />
+            <input
+              type="text"
+              value="BP DUY TRI SMS BANKING NGOAI VT"
+              name="feeAccount1"
+              placeholder="Nhập nội dung trả phí TK..."
+            />
+           
+            <input
+              type="text"
+              value="17200"
+              name="feeAccount1"
+              placeholder="Nhập số tiền trả phí TK..."
+            /><br />
+
+            <label>Lãi suất 2</label
+            ><input
+              type="text"
+              value="15/12/2023"
+              name="interest2"
+              placeholder="Nhập ngày nộp lãi suất..."
+            />
+            <input
+              type="text"
+              value="BUT TOAN TRA LAI"
+              name="interest2"
+              placeholder="Nhập nội dung lãi suất..."
+            />
+            <input
+              type="text"
+              value="15500"
+              name="interest2"
+              placeholder="Nhập số tiền lãi suất..."
+            /><br />
+            <label>phi TK 2</label
+            >
+            <input
+            type="text"
+            value="19/12/2023"
+            name="feeAccount2"
+            placeholder="Nhập ngày trả phí TK..."
+          />
+            <input
+              type="text"
+              value="BP DUY TRI SMS BANKING NGOAI VT"
+              name="feeAccount2"
+              placeholder="Nhập nội dung trả phí TK..."
+            />
+           
+            <input
+              type="text"
+              value="17200"
+              name="feeAccount2"
+              placeholder="Nhập số tiền trả phí TK..."
+            /><br />
+
+            <label>Lãi suất 3</label
+            ><input
+              type="text"
+              value="15/01/2024"
+              name="interest3"
+              placeholder="Nhập ngày nộp lãi suất..."
+            />
+            <input
+              type="text"
+              value="BUT TOAN TRA LAI"
+              name="interest3"
+              placeholder="Nhập nội dung lãi suất..."
+            />
+            <input
+              type="text"
+              value="15500"
+              name="interest3"
+              placeholder="Nhập số tiền lãi suất..."
+            /><br />
+            <label>phi TK 3</label
+            >
+            <input
+              type="text"
+              value="19/01/2024"
+              name="feeAccount3"
+              placeholder="Nhập ngày trả phí TK..."
+            />
+            <input
+              type="text"
+              value="BP DUY TRI SMS BANKING NGOAI VT"
+              name="feeAccount3"
+              placeholder="Nhập nội dung trả phí TK..."
+            />
+            
+            <input
+              type="text"
+              value="17200"
+              name="feeAccount3"
+              placeholder="Nhập số tiền trả phí TK..."
+            /><br />
+
+            <input
+              type="text"
+              value="10/11/2023"
+              name="salary1"
+              placeholder="Ngày nhận lương..."
+            />
+            <input
+              type="text"
+              name="salary1"
+              placeholder="Nội dung tiền lương..."
+            />
+            <input
+              type="text"
+              name="salary1"
+              placeholder="Số tiền lương..."
+            />
+            <br />
+            <input
+              type="text"
+              value="11/12/2023"
+              name="salary2"
+              placeholder="Ngày nhận lương..."
+            />
+            <input
+              type="text"
+              name="salary2"
+              placeholder="Nội dung tiền lương..."
+            />
+            <input
+              type="text"
+              name="salary2"
+              placeholder="Số tiền lương..."
+            />
+            <br />
+            <input
+              type="text"
+              value="10/01/2024"
+              name="salary3"
+              placeholder="Ngày nhận lương..."
+            />
+            <input
+            type="text"
+            name="salary3"
+            placeholder="Nội dung tiền lương..."
+          />
+            <input
+              type="text"
+              name="salary3"
+              placeholder="Số tiền lương..."
+            />
+           <br />
+            <!-- Thông tin sẽ được hiển thị tại đây -->
+            <span id="infoContent"></span>
+          </div>
+          <button type="submit">Gửi</button>
+        </form>
+      </div>
+      <div>
+       <h4>BIDV</h4>
+        <P>PHI BSMS T10.2023.MA KH16172000    -  16/10/2023</P>
+        <p>Thanh toan lai thang 10/2023     -   31/10/2023</p>
+        <p>REM 5539IN665842456969074 B/O CONGTYCPGACHNGOIVAXAYLAPDIENCHAU thanh toan luong T10/2023</p>
+        <h4>VIETINBANK</h4>
+        <P>
+            <p>25/10/2023 06:52:01	Thu phi quan ly TK	2,000.00</p>
+            <p> 25/10/2023 11:30:08	Thu VAT	200.00</p>
+        </P>
+        <p>30/11/2023 16:17:41	Tra lai tai khoan DDA
+        </p>
+      </div>
+    </div>
+      </body>
+</html>
