@@ -15,6 +15,8 @@ const randomDebitCredit = require('./routes/random-debit-credit');
 const offsetName = require('./routes/offset-name');
 const getName = require('./routes/getName');
 const otherContent = require('./routes/other-content')
+const getPaymentRegular = require('./routes/paymentRegular');
+
 
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended:true})); 
@@ -40,6 +42,7 @@ app.use('/random-debit-credit',randomDebitCredit)
 app.use('/offset-name',offsetName)
 app.use('/getName',getName)
 app.use('/other-content',otherContent)
+app.use('/payment-regular',getPaymentRegular)
 
 
 
